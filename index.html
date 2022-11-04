@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jian.css 的演示页面</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jian-css/jian.css@main/main.min.css"id="style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jian-css/jian.css@main/tools.min.css">
+    </head>
+    <body class="c">
+        <h1 style="text-align: center;">jian.css</h1><hr>
+        <p>一个超级轻的 CSS 框架，比你见过的几乎所有 CSS 框架都轻。</p>
+        <p>项目地址：<a href="https://github.com/xyzscratcher/jian.css"></a></p>
+        <a href="#docs" class="btn pri">阅读文档</a>
+        <h2>简介</h2>
+        <p>jian.css 是一个超轻的 CSS 框架，拥有以下特点：</p>
+        <ul>
+            <li>🎈&#xFE0F;超级轻量，比 water.css、simple.css 等 CSS 框架小得多。</li>
+            <li>✔&#xFE0F;高兼容性，支持大多数主流浏览器，包括 IE9（使用兼容版本）。</li>
+            <li>✨&#xFE0F;效果出众，丝毫不亚于 Bootstrap 等“重量级”框架。</li>
+            <li>🎨&#xFE0F;高自定义性，只用一行 JavaScript 代码，将主题颜色自由切换（使用普通版本）。</li>
+            <li>📏&#xFE0F;使用黄金比例，让您的网站更易阅读。</li>
+        </ul>
+        <!--<h2>有多小？</h2>
+        <p>不信，请看：</p>
+        <table>
+            <thead>
+                <tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>-->
+        <h2 id="docs">演示</h2>
+        <h3 id="btn">按钮</h3>
+        <p>只要加上 .btn类 ，就能将普通按钮或链接变成一个好看的按钮：</p>
+        <button class="btn">一个次要按钮</button>
+        <a class="btn"href="#">次要的链接按钮</a>
+        <p>在使用 .btn 类的基础上，加入 .pri 类即可变成一个主要按钮：</p>
+        <button class="btn pri">一个主要按钮</button>
+        <a href="#"class="btn pri">主要的链接按钮</a>
+        <h3 id="font">字的样式</h3>
+        <p>文本效果遵循浏览器默认样式：</p>
+        <p>这是<strong>重要的</strong><br><b>粗体</b><br><em>同样重要的</em><br><i>斜体</i><br><mark>还有标记</mark></p>
+        <p>当然，还有标题：</p>
+        <h1>这是一级标题</h1>
+        <h2>这是二级标题</h2>
+        <h3>这是三级标题</h3>
+        <h4>这是四级标题</h4>
+        <br>
+        <h3 id="flex">网格布局</h3>
+        <p>你可以使用 .row 类创建一行，使用 .col-n（n=1~12）来添加需要的列。最多为12列。在小屏幕下将会上下堆叠排版：</p>
+        <div class="row">
+            <div class="col-1 pri p-3">.col-1</div>
+            <div class="col-11 p-3 info">.col-11</div>
+            <div class="col-2 pri p-3">.col-2</div>   
+            <div class="col-10 p-3 info">.col-10</div>
+            <div class="col-3 pri p-3">.col-3</div>   
+            <div class="col-9 p-3 info">.col-9</div>
+            <div class="col-4 pri p-3">.col-4</div>
+            <div class="col-8 p-3 info">.col-8</div>
+            <div class="col-5 pri p-3">.col-5</div>
+            <div class="col-7 p-3 info">.col-7</div>
+            <div class="col-6 pri p-3">.col-6</div>
+            <div class="col-6 p-3 info">.col-6</div>
+        </div>
+        <h3 id="table">表格</h3>
+        <p>使用表格非常简单，您甚至不用添加 class ：</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        姓
+                    </th>
+                    <th>
+                        名
+                    </th>
+                    <th>
+                        年龄
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>X</td>
+                    <td>YZ</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>林</td>
+                    <td>勇</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>jian.css</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="list">列表</h3>
+        <p>和普通的HTML类似：</p>
+        <ul>
+            <li>1111</li>
+            <li>222</li>
+            <li>
+                <ol>
+                    <li>111</li>
+                    <li>222</li>
+                    <li>
+                        <ul>
+                            <li>11</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+        <h3 id="form">表单</h3>
+        <p>同样非常简单：</p>
+        <form>
+            <input type="text" placeholder="请输入用户名">
+            <input type="password" placeholder="请输入密码">
+            <button type="submit" class="btn pri">提交</button>
+        </form>
+        <h3 id="card">卡片</h3>
+        <p>只需添加 .card 类：</p>
+        <div class="card shadow-sm"><h1>hello!</h1><p>一张卡片</p></div>
+        <!--<h3>IE 兼容模式</h3>
+        <button class="btn pri"onclick="document.getElementById('style').href='./jianrong.css'">开启兼容模式</button>
+        <h3>主题颜色</h3>
+        <p>只需将“--main”变量改为你喜欢的颜色即可：</p>
+        <button class="btn pri" onclick="document.body.style.setProperty('--main','#f1f')">修改颜色</button>-->
+        <h3>代码</h3>
+        <p>就像这样：</p>
+        <pre>
+var i="1234567890";
+let func=(x,y)=>{retrun Math.pow(x,y)};
+//qwertyuiopasdfghjklzxcvbnm
+const arr=["114514","1919810"];
+while(true){
+console.log(`i is ${i}`);
+}
+        </pre>
+        <h3>块引用</h3>
+        <blockquote>
+            <p>jian.css 是一个超轻的 CSS 框架。</p>
+            <cite>——XYZscratcher</cite>
+        </blockquote>
+        <footer class="text-center">
+            <p>Powered by <a href="//github.com/jian-css/jian.css">jian.css</a></p>
+        </footer>
+    </body>
+</html>
