@@ -16,7 +16,10 @@
     <script>
       window.$docsify = {
         coverpage: false,
-        loadSidebar: true
+        loadSidebar: false,
+        plugins: [
+          EditOnGithubPlugin.create(https://github.com/jian-css/jian-css.github.io/main/docs/)
+        ]
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
