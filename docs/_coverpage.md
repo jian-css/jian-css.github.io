@@ -11,4 +11,4 @@
 - 效果出众-->
 
 [GitHub](https://github.com/jian-css/jian.css)
-[Get Started](/#/)
+[Get Started](/#jiancss)
