@@ -37,16 +37,16 @@
 
             hook.beforeEach(function (html) {
               var url =
-                'https://github.com/jian-css/jian-css.github.io/tree/main/docs' +
+                'https://github.com/jian-css/jian-css.github.io/tree/main/docs/' +
                 vm.route.file;
-              var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n';
+              var editHtml = '[📝在 GitHub 上编辑](' + url + ')\n';
 
               return (
                 editHtml +
                 html +
                 '\n----\n' +
                 'Last modified ' +
-                editHtml
+                new Date(Date.parse(document.lastModified)).toLocaleString()
               );
             });
           },
