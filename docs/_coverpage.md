@@ -2,13 +2,13 @@
 
 ![logo](_media/icon.svg)
 
-# docsify <small>3.5</small>
+# jian.css <small>1.2</small>
 
-> A magical documentation site generator.
+> 一个超级轻的 CSS 框架。
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+- 超级轻量
+- 高兼容性
+- 效果出众
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[GitHub](https://github.com/jian-css/jian.css)
+[Get Started](/#/)
