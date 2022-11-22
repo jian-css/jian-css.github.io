@@ -18,12 +18,23 @@
         coverpage: false,
         loadSidebar: false,
         plugins: [
-          window.EditOnGithubPlugin.create("https://github.com/jian-css/jian-css.github.io/tree/main/docs/")
-        ]
-      };
+          function pageFooter(hook, vm) {
+            var footer = [
+              '<hr/>',
+              '<footer>',
+              '<span><a href="https://github.com/QingWei-Li">cinwell</a> &copy;2017.</span>',
+              '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+              '</footer>',
+            ].join('');
+
+            hook.afterEach(function (html) {
+              return html + footer;
+            });
+            },
+              ]
+            };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/njleonzhang/docsify-edit-on-github@master/index.js"></script>
   </body>
 </html>
