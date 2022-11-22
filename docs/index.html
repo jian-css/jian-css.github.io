@@ -22,6 +22,7 @@
             var footer = [
               '<hr/>',
               '<footer>',
+              `<p>最后更新于 ${new Date(Date.parse(document.lastModified)).toLocaleString()}</p>`,
               '<p>© 2022 <a href="https://github.com/orgs/jian-css/people">The jian.css Authors</a></p>',
               //'',
               '</footer>',
@@ -43,10 +44,10 @@
 
               return (
                 editHtml +
-                html +
+                html/* +
                 '\n----\n' +
                 'Last modified ' +
-                new Date(Date.parse(document.lastModified)).toLocaleString()
+                new Date(Date.parse(document.lastModified)).toLocaleString()*/
               );
             });
           },
