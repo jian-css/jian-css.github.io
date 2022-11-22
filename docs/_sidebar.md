@@ -1,3 +1,3 @@
-- Getting started
+- 开始
 
-  - [Quick start](quickstart.md)
+  - [快速入门](quickstart.md)
