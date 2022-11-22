@@ -6,9 +6,9 @@
 
 > 一个超级轻的 CSS 框架。
 
-- 超级轻量
+<!--- 超级轻量
 - 高兼容性
-- 效果出众
+- 效果出众-->
 
 [GitHub](https://github.com/jian-css/jian.css)
 [Get Started](/#/)
