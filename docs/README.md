@@ -10,7 +10,7 @@ jian.css，一个超级轻的 CSS 框架，比你见过的几乎所有 CSS 框�
 有关更多详细信息，请参阅[快速入门指南](quickstart.md)。
 ## 特点
 它拥有以下特点：
-- 🎈️超级轻量，比 water.css、simple.css 等“轻量级” CSS 框架小得多，大小是 simple.css 的**37%**（main.css）。
+- 🎈️超级轻量，比 water.css、simple.css 等“轻量级” CSS 框架小得多，大小是 simple.css 的37%（main.css）。
 - ✔高兼容性，支持大多数主流浏览器。
 - 🌙适配深色模式，让网站在黑暗中也能适应环境。
 - ✨️效果出众，丝毫不亚于 Bootstrap 等“重量级”框架。
