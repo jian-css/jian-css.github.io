@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-<img src="_media/icon.svg"style="max-width:10%'>
+![LOGO](_media/icon.svg)
 
 # jian.css <small>1.2</small>
 
