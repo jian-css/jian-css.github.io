@@ -23,10 +23,16 @@
         formatUpdated: '{MM}/{DD} {HH}:{mm}',
         plugins: [
           function pageFooter(hook, vm) {
+            var history =
+                  'https://github.com/jian-css/jian-css.github.io/commits/main/docs/' +
+                  vm.route.file;
+            var history = '<a href="'+history+'"></a>'
             var footer = [
               '<hr/>',
               '<footer>',
-              //`<p>本网站最后更新于 ${new Date(Date.parse(document.lastModified)).toLocaleString()}</p>`,
+              `<p>本网站最后更新于 ${new Date(Date.parse(document.lastModified)).toLocaleString()}</p>`,
+              '提交记录',
+              history
               '<p>© 2022 <a href="https://github.com/orgs/jian-css/people">The jian.css Authors</a></p>',
               //'',
               '</footer>',
@@ -45,14 +51,16 @@
                 'https://github.com/jian-css/jian-css.github.io/edit/main/docs/' +
                 vm.route.file;
               var editHtml = '[📝在 GitHub 上编辑](' + url + ')\n';
+              
 
               return (
                 editHtml +
                 html +
                 //'\n----\n' +
-                'Last modified ' +
-                //new Date(Date.parse(document.lastModified)).toLocaleString()
-                '{docsify-update}'
+                //' ' +
+                //new Date(Date.parse(document.lastModified)).toLocaleString() +
+                
+                //'{docsify-update}'
               );
             });
           },
