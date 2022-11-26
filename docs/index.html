@@ -23,19 +23,19 @@
         formatUpdated: '{MM}/{DD} {HH}:{mm}',
         plugins: [
           function pageFooter(hook, vm) {
-            if(location.hash==="#/"){
+            /*if(location.hash==="#/"){
               var l="README.md"}
             else{
               var l=location.hash.replaceAll("#/","")+".md"}
             var history =
                   'https://github.com/jian-css/jian-css.github.io/commits/main/docs/' +
                   l;
-            history = '<a href="'+history+'">提交记录</a>'
+            history = '<a href="'+history+'">提交记录</a>'*/
             var footer = [
               '<hr/>',
               '<footer>',
               `<p>本网站最后更新于 ${new Date(Date.parse(document.lastModified)).toLocaleString()}</p>`,
-              history,
+              //history,
               '<p>© 2022 <a href="https://github.com/orgs/jian-css/people">The jian.css Authors</a></p>',
               //'',
               '</footer>',
@@ -58,7 +58,7 @@
 
               return (
                 editHtml +
-                html// +
+                html +
                 //'\n----\n' +
                 //' ' +
                 //new Date(Date.parse(document.lastModified)).toLocaleString() +
