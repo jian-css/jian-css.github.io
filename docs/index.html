@@ -20,7 +20,7 @@
         loadSidebar: true,
         repo: 'jian-css/jian.css',
         notFoundPage: true,
-        formatUpdated: '{MM}/{DD} {HH}:{mm}',
+        //formatUpdated: '{MM}/{DD} {HH}:{mm}',
         plugins: [
           function pageFooter(hook, vm) {
             /*if(location.hash==="#/"){
@@ -53,12 +53,16 @@
               var url =
                 'https://github.com/jian-css/jian-css.github.io/edit/main/docs/' +
                 vm.route.file;
+              var h='https://github.com/jian-css/jian-css.github.io/commits/main/docs/' +
+                  vm.route.file;
               var editHtml = '[📝在 GitHub 上编辑](' + url + ')\n';
+              var ht='[编辑历史]('+h+');
               
 
               return (
                 editHtml +
                 html +
+                ht
                 //'\n----\n' +
                 //' ' +
                 //new Date(Date.parse(document.lastModified)).toLocaleString() +
