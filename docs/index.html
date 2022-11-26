@@ -32,7 +32,7 @@
                   l;
             history = '<a href="'+history+'">提交记录</a>'*/
             var footer = [
-              '<hr/>',
+              //'<hr/>',
               '<footer>',
               `<p>本网站最后更新于 ${new Date(Date.parse(document.lastModified)).toLocaleString()}</p>`,
               //history,
@@ -56,12 +56,14 @@
               var h='https://github.com/jian-css/jian-css.github.io/commits/main/docs/' +
                   vm.route.file;
               var editHtml = '[📝在 GitHub 上编辑](' + url + ')\n';
-              var ht='[编辑历史]('+h+')';
+              var ht='/n[编辑历史]('+h+')/n';
+              var hr='/n---/n'
               
 
               return (
                 editHtml +
                 html +
+                hr +
                 ht
                 //'\n----\n' +
                 //' ' +
