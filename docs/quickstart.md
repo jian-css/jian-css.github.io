@@ -9,3 +9,7 @@
 <!--jian.css 提供的工具类，可以不添加-->
 <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/jian-css/jian.css@master/tools.min.css">
 ```
+或者下载到本地：
+```bash
+npm i jian.css
+```
