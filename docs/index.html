@@ -21,6 +21,15 @@
         repo: 'jian-css/jian.css',
         notFoundPage: true,
         //formatUpdated: '{MM}/{DD} {HH}:{mm}',
+        pagination: {
+    previousText: '上一章节',
+    // or
+    nextText: {
+      '/en/': 'NEXT',
+      '/': '下一章节'
+    },
+    crossChapter: true,
+    crossChapterText: true,},
         plugins: [
           function pageFooter(hook, vm) {
             /*if(location.hash==="#/"){
@@ -78,5 +87,6 @@
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   </body>
 </html>
