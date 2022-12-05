@@ -1,3 +1,4 @@
+- [简介](README.md)
 - 开始
   - [快速入门](quickstart.md)
 - [常见问题](FAQ.md)
